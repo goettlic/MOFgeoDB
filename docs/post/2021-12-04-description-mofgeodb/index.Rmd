@@ -21,6 +21,7 @@ Spatialite Database with data of vegetation (mainly trees) and plots for ecosyst
 First overview of the relational structure gives fig1
 ![ER diagram MOFgeoDB complete](images/erd_complete.png){width=500px}
 The database can be divided into following sections
+
 1. Species
 2. Plots
 3. Trees

@@ -6,7 +6,37 @@
     <description>Recent content in data on MOFgeoDB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis</title>
+      <link>/post/2021-12-05-analysis/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-12-05-analysis/</guid>
+      <description>   General Situation Analysis of data happens at different stages:
+automatic statistical analysis in the database analysis in the context of individual research questions  Statistics of plots forest structure  PlotBook  Selection of fs-plot Are the plots randomly chosen and represent the mean of their surrounding?
+ Neighbour trees   </description>
+    </item>
+    
+    <item>
+      <title>Data Collecting</title>
+      <link>/post/2021-12-05-data-collecting/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-12-05-data-collecting/</guid>
+      <description>General Situation Collecting data happens in various ways:
+systematic in context of research more or less chaotic in the context of teaching private to fill the gaps of 2. or any other reason automatic in a fixed time interval individual once in a lifetime or in a fixed interval  The second pretends not collecting faulty data but during courses often time is limited to collect everything is needed or the intention of the course is just focused on a special question or learning the actual method.</description>
+    </item>
+    
+    <item>
+      <title>Experiments</title>
+      <link>/post/2021-12-05-experiments/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-12-05-experiments/</guid>
+      <description>   Experimentierplot Increasig Deadwood  Full inventory of trees   UAV-Plot Full inventory of trees   Natural young growth Hordengatter to exclosure of deer  Ehemalige Fichtenfläche   Microclimate  </description>
+    </item>
+    
     <item>
       <title>Description MOFgeoDB</title>
       <link>/post/2021-12-04-description-mofgeodb/</link>
@@ -14,8 +44,8 @@
       
       <guid>/post/2021-12-04-description-mofgeodb/</guid>
       <description>   General Setting Spatialite Database with data of vegetation (mainly trees) and plots for ecosystem research (forest structure, experiments). Additional there are some auxiliary datasets (geopackage) for visual reasons.
- Relational Structure First overview of the relational structure gives fig1 The database can be divided into following sections 1. Species 2. Plots 3. Trees 4. Lookup tables
-Species  Plots  Trees  Lookup Tables   Auxiliary Data  </description>
+ Relational Structure First overview of the relational structure gives fig1 The database can be divided into following sections
+Species Plots Trees Lookup tables  Species  Plots  Trees  Lookup Tables   Auxiliary Data  </description>
     </item>
     
   </channel>
