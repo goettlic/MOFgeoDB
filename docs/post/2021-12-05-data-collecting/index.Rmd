@@ -32,10 +32,13 @@ The second pretends not collecting faulty data but during courses often time is 
 ## Vegetation
 
 ### Forest structure
+Plotsize, distribution, parameters
 
 ### Young growth
+in fs-plots, in experiments
 
 ### Dead wood
+in fs-plots, in experiments site
 
 ## Climate
 

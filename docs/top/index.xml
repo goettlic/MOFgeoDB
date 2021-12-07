@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title></title>
+      <link>/top/about/</link>
+      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/top/about/</guid>
+      <description>Impressum Hier aus Folder Top.</description>
+    </item>
+    
+    <item>
       <title>Literature</title>
       <link>/top/books/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
@@ -24,15 +33,6 @@
       <guid>/top/books/</guid>
       <description>Books One book
 More Books Second Book</description>
-    </item>
-    
-    <item>
-      <title>Wieso, weshalb, warum?</title>
-      <link>/top/about/</link>
-      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/top/about/</guid>
-      <description>Impressum Hier aus Folder Top!</description>
     </item>
     
   </channel>

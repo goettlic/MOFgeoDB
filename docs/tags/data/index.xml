@@ -6,7 +6,16 @@
     <description>Recent content in data on MOFgeoDB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Literature, Manuals and other Sources</title>
+      <link>/post/2021-12-07-literature-manuals-and-other-sources/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-12-07-literature-manuals-and-other-sources/</guid>
+      <description>Just all our sources: 1. Simple Features for R. (n.d.). Retrieved December 7, 2021, from https://r-spatial.github.io/sf/articles/sf1.html  Dorji, Y., Annighöfer, P., Ammer, C., &amp;amp; Seidel, D. (2019). Response of Beech (Fagus sylvatica L.) Trees to Competition—New Insights from Using Fractal Analysis. Remote Sensing, 11(22), 2656. https://doi.org/10.3390/rs11222656  Ehbrecht, M., Schall, P., Juchheim, J., Ammer, C., &amp;amp; Seidel, D. (2016). Effective number of layers: A new measure for quantifying three-dimensional stand structure based on sampling with terrestrial LiDAR.</description>
+    </item>
+    
     <item>
       <title>Analysis</title>
       <link>/post/2021-12-05-analysis/</link>
@@ -34,7 +43,10 @@ systematic in context of research more or less chaotic in the context of teachin
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/2021-12-05-experiments/</guid>
-      <description>   Experimentierplot Increasig Deadwood  Full inventory of trees   UAV-Plot Full inventory of trees   Natural young growth Hordengatter to exclosure of deer  Ehemalige Fichtenfläche   Microclimate  </description>
+      <description>Experimentierplot Plot in Abt. Karte Foto
+Increasing Deadwood Zwei Buchen wurden xxxx gefällt und liegen gelassen. Zwei Buchen wurden xxxx geringelt, um stehendes Totholz zu erzeugen. Der Austrieb hat aber 2021 noch stattgefunden. Untersuchungen der Jahrringe (Neuwirth mit Kurs 2021) zeigen aber, das kein Zuwachs mehr stattfindet.
+ Full inventory of trees Im gesamten Plot wurden im Rahmen von unterschiedlichen Kursen alle Bäume eingemssen und kartiert.
+  UAV-Plot Full inventory of trees   Natural young growth Karte</description>
     </item>
     
     <item>
@@ -43,9 +55,10 @@ systematic in context of research more or less chaotic in the context of teachin
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/2021-12-04-description-mofgeodb/</guid>
-      <description>   General Setting Spatialite Database with data of vegetation (mainly trees) and plots for ecosystem research (forest structure, experiments). Additional there are some auxiliary datasets (geopackage) for visual reasons.
+      <description>General Setting Spatialite Database with data of vegetation (mainly trees) and plots for ecosystem research (forest structure, experiments). Additional there are some auxiliary datasets (geopackage) for visual reasons.
+Mal ein Zitat Lovelace et al. (n.d.)
  Relational Structure First overview of the relational structure gives fig1 The database can be divided into following sections
-Species Plots Trees Lookup tables  Species  Plots  Trees  Lookup Tables   Auxiliary Data  </description>
+Species Plots Trees Lookup tables  Species  Plots  Trees  Lookup Tables   Auxiliary Data Lovelace, R.</description>
     </item>
     
   </channel>

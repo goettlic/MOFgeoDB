@@ -3,7 +3,7 @@ author: goettlic
 date: "2021-12-04"
 image: img/fs-009_summerCanopy.jpg
 categories:
-- Help
+- mofgeodb
 layout: post
 title: Wieso, weshalb, warum?
 subtitle: MarburgOpenForest

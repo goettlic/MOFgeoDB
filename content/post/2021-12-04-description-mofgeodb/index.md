@@ -13,9 +13,13 @@ output:
   blogdown::html_page:
     keep_md: yes
 weight: 100
+bibliography: ../../MOFbib.bib
+csl: ../../journal-of-biogeography.csl
 ---
 # General Setting
 Spatialite Database with data of vegetation (mainly trees) and plots for ecosystem research (forest structure, experiments). Additional there are some auxiliary datasets (geopackage) for visual reasons.
+
+Mal ein Zitat @lovelace_welcome_nodate
 
 # Relational Structure
 First overview of the relational structure gives fig1
