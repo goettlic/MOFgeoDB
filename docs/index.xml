@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MOFgeoDB</title>
-    <link>/</link>
+    <link>https://goettlic.github.io/MOFgeoDB/</link>
     <description>Recent content on MOFgeoDB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://goettlic.github.io/MOFgeoDB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Content</title>
-      <link>/top/archive/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/top/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/archive/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/top/archive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Literature, Manuals and other Sources</title>
-      <link>/post/2021-12-07-literature-manuals-and-other-sources/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-07-literature-manuals-and-other-sources/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-12-07-literature-manuals-and-other-sources/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-07-literature-manuals-and-other-sources/</guid>
       <description>Just all our sources: 1. Simple Features for R. (n.d.). Retrieved December 7, 2021, from https://r-spatial.github.io/sf/articles/sf1.html  Dorji, Y., Annighöfer, P., Ammer, C., &amp;amp; Seidel, D. (2019). Response of Beech (Fagus sylvatica L.) Trees to Competition—New Insights from Using Fractal Analysis. Remote Sensing, 11(22), 2656. https://doi.org/10.3390/rs11222656  Ehbrecht, M., Schall, P., Juchheim, J., Ammer, C., &amp;amp; Seidel, D. (2016). Effective number of layers: A new measure for quantifying three-dimensional stand structure based on sampling with terrestrial LiDAR.</description>
     </item>
     
     <item>
       <title>Analysis</title>
-      <link>/post/2021-12-05-analysis/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-05-analysis/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-12-05-analysis/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-05-analysis/</guid>
       <description>   General Situation Analysis of data happens at different stages:
 automatic statistical analysis in the database analysis in the context of individual research questions  Statistics of plots forest structure  PlotBook  Selection of fs-plot Are the plots randomly chosen and represent the mean of their surrounding?
  Neighbour trees   </description>
@@ -38,20 +38,20 @@ automatic statistical analysis in the database analysis in the context of indivi
     
     <item>
       <title>Data Collecting</title>
-      <link>/post/2021-12-05-data-collecting/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-05-data-collecting/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-12-05-data-collecting/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-05-data-collecting/</guid>
       <description>General Situation Collecting data happens in various ways:
 systematic in context of research more or less chaotic in the context of teaching private to fill the gaps of 2. or any other reason automatic in a fixed time interval individual once in a lifetime or in a fixed interval  The second pretends not collecting faulty data but during courses often time is limited to collect everything is needed or the intention of the course is just focused on a special question or learning the actual method.</description>
     </item>
     
     <item>
       <title>Experiments</title>
-      <link>/post/2021-12-05-experiments/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-05-experiments/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-12-05-experiments/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-05-experiments/</guid>
       <description>Experimentierplot Plot in Abt. Karte Foto
 Increasing Deadwood Zwei Buchen wurden xxxx gefällt und liegen gelassen. Zwei Buchen wurden xxxx geringelt, um stehendes Totholz zu erzeugen. Der Austrieb hat aber 2021 noch stattgefunden. Untersuchungen der Jahrringe (Neuwirth mit Kurs 2021) zeigen aber, das kein Zuwachs mehr stattfindet.
  Full inventory of trees Im gesamten Plot wurden im Rahmen von unterschiedlichen Kursen alle Bäume eingemssen und kartiert.
@@ -60,10 +60,10 @@ Increasing Deadwood Zwei Buchen wurden xxxx gefällt und liegen gelassen. Zwei B
     
     <item>
       <title>Description MOFgeoDB</title>
-      <link>/post/2021-12-04-description-mofgeodb/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-04-description-mofgeodb/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-12-04-description-mofgeodb/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-04-description-mofgeodb/</guid>
       <description>General Setting Spatialite Database with data of vegetation (mainly trees) and plots for ecosystem research (forest structure, experiments). Additional there are some auxiliary datasets (geopackage) for visual reasons.
 Mal ein Zitat Lovelace et al. (n.d.)
  Relational Structure First overview of the relational structure gives fig1 The database can be divided into following sections
@@ -72,29 +72,29 @@ Species Plots Trees Lookup tables  Species  Plots  Trees  Lookup Tables   Auxili
     
     <item>
       <title></title>
-      <link>/top/about/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/top/about/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/top/about/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/top/about/</guid>
       <description>Impressum Hier aus Folder Top.</description>
     </item>
     
     <item>
       <title>Literature</title>
-      <link>/top/books/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/top/books/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/top/books/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/top/books/</guid>
       <description>Books One book
 More Books Second Book</description>
     </item>
     
     <item>
       <title>Wieso, weshalb, warum?</title>
-      <link>/post/about/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/post/about/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/about/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/post/about/</guid>
       <description>MOF for teaching Der Wald lässt sich wunderbar als Freiland-Experimentierfläche in vielen Kursen einsetzen. Ursprünglich in 2017 für den Master Physische Geographie überhaupt (wieder) entdeckt, wird er jetzt auch im Bachelor Geographie und Lehramt Erdkunde regelmäßig mit Studierenden besucht.
 MOF for science Have a look at Natur4.0.
 MOFgeoDB MOFgeoDB is the spatialdatabase for the Marburg Open Forest.</description>
@@ -102,10 +102,10 @@ MOFgeoDB MOFgeoDB is the spatialdatabase for the Marburg Open Forest.</descripti
     
     <item>
       <title></title>
-      <link>/search/placeholder/</link>
+      <link>https://goettlic.github.io/MOFgeoDB/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/search/placeholder/</guid>
+      <guid>https://goettlic.github.io/MOFgeoDB/search/placeholder/</guid>
       <description></description>
     </item>
     

@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: 'https://goettlic.github.io/MOFgeoDB/'
 title: 'MOFgeoDB'
 publishDir: 'docs'
 theme: hugo-theme-clearwhite-gc
