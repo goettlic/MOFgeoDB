@@ -28,9 +28,8 @@ knitr::include_graphics("images/erd_complete.png")
 
 The database can be divided into following sections
 
-* Species
-* Plots
 * Trees
+* Plots
 * Lookup tables
 
 When necessary the creator (referenced via `creator_id`) and the date (day) of each single measurement is noted. Creator are stored in the look-up table `lut_creator` which can be a single person or (study) group and is designed rather simple.
@@ -43,29 +42,44 @@ Following items can be additionally stored via the corresponding tables using th
 * general parameters
   * diameter: default breast height 1.3 m, triggers calculation of perimeter or diameter on circle
   * height: method is free text
-  * state: looking up state via `state_id` as shown in table ref.
-  * social position
-  * vitality
-  * habitat
+  * state: looking up state via `state_id` as shown in table below.
+  * social position: after cite 
+  * vitality: after cite
+  * habitat: multiple micro-habitats per tree after cite
 * special investigations
-  * sapflow
-  * dendroband
-  * yearring
-  * roost for bats
+  * sapflow: some trees installed with sapflow measurement
+  * dendroband: manual dendrometer, see figure foto
+  * yearring: investigation of yearrings using cores
+  * roost: determined roosts for bats
 * dead wood
-  * lying deadwood
-  * decomposition
+  * lying deadwood: size and position of lying deadwood >20 cm diameter
+  * decomposition: decomposition rate for deadwood after cite
 
 ### Plots
+There are different type of survey plots (see `lut_plottype`):
 
-### 
+<!-- und auch hier besser tabelle aus db direkt auslesen mit anzahl o.ä.-->
+plottype_id | name | xLength | yLength | description
+------------|------|---------|---------|-------------
+fs | forest structure | 20.0 | NULL | Waldstrukturplots nach Jürgen in den Masterkursen
+de | dendro ecology | 80.0 | NULL | Jahrringbaumfelder zur Aggregierung der Daten, eher virtuell
+exc | exclosure plot | 16.0 | 8.0 | Auschlussplots aus Gattern und Vergleichsplots
+ps | pasture structure | 2.0 | 2.0 | Vegetationsaufnahmen im Freiland oder Wiese 2m*2m
+dm | dendrometer band field | 50.0 | NULL | Dendrometerbandfelder zur Aggregierung der Einzelbäume, eher virtuell
+pg | polygon | NULL | NULL | unregelmäßiger Plot als Polygon
+sub | subplot | NULL | NULL | Subplot als regelmäßige Unterteilung eines größeren Plots 
+
+Most common is the fs-plot for forest structure survey. Most of the plots get there geolocation from a fixed benchmark in the field (see figure X) documented in `topopoint`.
+
+The `plot_diary`can be used to document surveys on a plot linking specific actions (`lut_action`)
+
 
 ### Lookup Tables
 
 #### lut_tree_state
-
+<!-- eigentlich besser direkt aus der db lesen und die Tabelle anzeigen lassen -->
 state_id | state | name | description
---------------------------------------
+---------|-------|------|----------------
 1.1 | 1 |	alive |	first survey living tree
 1.2 |	1 |	alive |	living tree from young growth
 2.4 |	0 |	dead |	died unspecified
@@ -80,3 +94,24 @@ state_id | state | name | description
 0 |	1 |	db | first db entry
 
 # Auxiliary Data
+
+Other geographic datasets are stored as geopackage. In the `supplementary` package following layers are available:
+
+* streets: including footpaths, etc. based on OSM, arial images and  Lidar
+* water: 
+* forest divisions: as used by HessenForst
+* infrastructure: point data on scietifc instruments and other POIs
+* area plots: non scientific plots or fences
+
+The `elevation_simple` package shows simplified contours derived from the DEM.
+
+# Raster Data
+
+### UAV
+Orthofotos and pointclouds are generated on behalf of  [NATUR4.0](https://github.com/Nature40) from UAV raw data. More derivates are calculateted like tree segmentation, canopy heights, etc. (see somewhere? cite?) 
+
+### LIDAR
+
+### Arial / Satellite Imagery
+
+# Sources

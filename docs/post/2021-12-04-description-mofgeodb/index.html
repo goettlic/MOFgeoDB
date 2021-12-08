@@ -230,9 +230,8 @@ Figure 1: Complete ER diagram of MOFgeoDB without creator table
 </div>
 <p>The database can be divided into following sections</p>
 <ul>
-<li>Species</li>
-<li>Plots</li>
 <li>Trees</li>
+<li>Plots</li>
 <li>Lookup tables</li>
 </ul>
 <p>When necessary the creator (referenced via <code>creator_id</code>) and the date (day) of each single measurement is noted. Creator are stored in the look-up table <code>lut_creator</code> which can be a single person or (study) group and is designed rather simple.</p>
@@ -245,55 +244,220 @@ Figure 1: Complete ER diagram of MOFgeoDB without creator table
 <ul>
 <li>diameter: default breast height 1.3 m, triggers calculation of perimeter or diameter on circle</li>
 <li>height: method is free text</li>
-<li>state: looking up state via <code>state_id</code> as shown in table ref.</li>
-<li>social position</li>
-<li>vitality</li>
-<li>habitat</li>
+<li>state: looking up state via <code>state_id</code> as shown in table below.</li>
+<li>social position: after cite</li>
+<li>vitality: after cite</li>
+<li>habitat: multiple micro-habitats per tree after cite</li>
 </ul></li>
 <li>special investigations
 <ul>
-<li>sapflow</li>
-<li>dendroband</li>
-<li>yearring</li>
-<li>roost for bats</li>
+<li>sapflow: some trees installed with sapflow measurement</li>
+<li>dendroband: manual dendrometer, see figure foto</li>
+<li>yearring: investigation of yearrings using cores</li>
+<li>roost: determined roosts for bats</li>
 </ul></li>
 <li>dead wood
 <ul>
-<li>lying deadwood</li>
-<li>decomposition</li>
+<li>lying deadwood: size and position of lying deadwood &gt;20 cm diameter</li>
+<li>decomposition: decomposition rate for deadwood after cite</li>
 </ul></li>
 </ul>
 </div>
 <div id="plots" class="section level3">
 <h3>Plots</h3>
-</div>
-<div id="section" class="section level3">
-<h3></h3>
+<p>There are different type of survey plots (see <code>lut_plottype</code>):</p>
+<!-- und auch hier besser tabelle aus db direkt auslesen mit anzahl o.ä.-->
+<table>
+<colgroup>
+<col width="24%" />
+<col width="12%" />
+<col width="18%" />
+<col width="18%" />
+<col width="26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>plottype_id</th>
+<th>name</th>
+<th>xLength</th>
+<th>yLength</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>fs</td>
+<td>forest structure</td>
+<td>20.0</td>
+<td>NULL</td>
+<td>Waldstrukturplots nach Jürgen in den Masterkursen</td>
+</tr>
+<tr class="even">
+<td>de</td>
+<td>dendro ecology</td>
+<td>80.0</td>
+<td>NULL</td>
+<td>Jahrringbaumfelder zur Aggregierung der Daten, eher virtuell</td>
+</tr>
+<tr class="odd">
+<td>exc</td>
+<td>exclosure plot</td>
+<td>16.0</td>
+<td>8.0</td>
+<td>Auschlussplots aus Gattern und Vergleichsplots</td>
+</tr>
+<tr class="even">
+<td>ps</td>
+<td>pasture structure</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>Vegetationsaufnahmen im Freiland oder Wiese 2m*2m</td>
+</tr>
+<tr class="odd">
+<td>dm</td>
+<td>dendrometer band field</td>
+<td>50.0</td>
+<td>NULL</td>
+<td>Dendrometerbandfelder zur Aggregierung der Einzelbäume, eher virtuell</td>
+</tr>
+<tr class="even">
+<td>pg</td>
+<td>polygon</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>unregelmäßiger Plot als Polygon</td>
+</tr>
+<tr class="odd">
+<td>sub</td>
+<td>subplot</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>Subplot als regelmäßige Unterteilung eines größeren Plots</td>
+</tr>
+</tbody>
+</table>
+<p>Most common is the fs-plot for forest structure survey. Most of the plots get there geolocation from a fixed benchmark in the field (see figure X) documented in <code>topopoint</code>.</p>
+<p>The <code>plot_diary</code>can be used to document surveys on a plot linking specific actions (<code>lut_action</code>)</p>
 </div>
 <div id="lookup-tables" class="section level3">
 <h3>Lookup Tables</h3>
 <div id="lut_tree_state" class="section level4">
 <h4>lut_tree_state</h4>
+<!-- eigentlich besser direkt aus der db lesen und die Tabelle anzeigen lassen -->
+<table>
+<thead>
+<tr class="header">
+<th>state_id</th>
+<th>state</th>
+<th>name</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1</td>
+<td>1</td>
+<td>alive</td>
+<td>first survey living tree</td>
+</tr>
+<tr class="even">
+<td>1.2</td>
+<td>1</td>
+<td>alive</td>
+<td>living tree from young growth</td>
+</tr>
+<tr class="odd">
+<td>2.4</td>
+<td>0</td>
+<td>dead</td>
+<td>died unspecified</td>
+</tr>
+<tr class="even">
+<td>2.1</td>
+<td>0</td>
+<td>dead</td>
+<td>first survey dead tree</td>
+</tr>
+<tr class="odd">
+<td>2.2</td>
+<td>0</td>
+<td>dead</td>
+<td>trunk fracture</td>
+</tr>
+<tr class="even">
+<td>2.3</td>
+<td>0</td>
+<td>dead</td>
+<td>windthrow with uprooted tree</td>
+</tr>
+<tr class="odd">
+<td>3.1</td>
+<td>0</td>
+<td>felling</td>
+<td>felling only</td>
+</tr>
+<tr class="even">
+<td>3.2</td>
+<td>0</td>
+<td>timber extraction</td>
+<td>felling and timber extraction</td>
+</tr>
+<tr class="odd">
+<td>3.3</td>
+<td>1</td>
+<td>limbing</td>
+<td>limbing</td>
+</tr>
+<tr class="even">
+<td>3.4</td>
+<td>1</td>
+<td>bark ringing</td>
+<td>bark ringing</td>
+</tr>
+<tr class="odd">
+<td>2.5</td>
+<td>0</td>
+<td>dead</td>
+<td>first survey stump only</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+<td>db</td>
+<td>first db entry</td>
+</tr>
+</tbody>
+</table>
 </div>
-</div>
-<div id="state_id-state-name-description" class="section level2">
-<h2>state_id | state | name | description</h2>
-<p>1.1 | 1 | alive | first survey living tree
-1.2 | 1 | alive | living tree from young growth
-2.4 | 0 | dead | died unspecified
-2.1 | 0 | dead | first survey dead tree
-2.2 | 0 | dead | trunk fracture
-2.3 | 0 | dead | windthrow with uprooted tree
-3.1 | 0 | felling | felling only
-3.2 | 0 | timber extraction | felling and timber extraction
-3.3 | 1 | limbing | limbing
-3.4 | 1 | bark ringing | bark ringing
-2.5 | 0 | dead | first survey stump only
-0 | 1 | db | first db entry</p>
 </div>
 </div>
 <div id="auxiliary-data" class="section level1">
 <h1>Auxiliary Data</h1>
+<p>Other geographic datasets are stored as geopackage. In the <code>supplementary</code> package following layers are available:</p>
+<ul>
+<li>streets: including footpaths, etc. based on OSM, arial images and Lidar</li>
+<li>water:</li>
+<li>forest divisions: as used by HessenForst</li>
+<li>infrastructure: point data on scietifc instruments and other POIs</li>
+<li>area plots: non scientific plots or fences</li>
+</ul>
+<p>The <code>elevation_simple</code> package shows simplified contours derived from the DEM.</p>
+</div>
+<div id="raster-data" class="section level1">
+<h1>Raster Data</h1>
+<div id="uav" class="section level3">
+<h3>UAV</h3>
+<p>Orthofotos and pointclouds are generated on behalf of <a href="https://github.com/Nature40">NATUR4.0</a> from UAV raw data. More derivates are calculateted like tree segmentation, canopy heights, etc. (see somewhere? cite?)</p>
+</div>
+<div id="lidar" class="section level3">
+<h3>LIDAR</h3>
+</div>
+<div id="arial-satellite-imagery" class="section level3">
+<h3>Arial / Satellite Imagery</h3>
+</div>
+</div>
+<div id="sources" class="section level1">
+<h1>Sources</h1>
 </div>
 
                 <style>
