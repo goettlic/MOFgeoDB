@@ -6,14 +6,51 @@
     <description>Recent content in mofgeodb on MOFgeoDB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://goettlic.github.io/MOFgeoDB/categories/mofgeodb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://goettlic.github.io/MOFgeoDB/categories/mofgeodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lookup Tables</title>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-10-lookup-tables/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-10-lookup-tables/</guid>
+      <description>Lookup Tables lut_plottype     plottype_id name xLength yLength description    fs forest structure 20.0 NULL Waldstrukturplots nach Jürgen in den Masterkursen  de dendro ecology 80.0 NULL Jahrringbaumfelder zur Aggregierung der Daten, eher virtuell  exc exclosure plot 16.0 8.0 Auschlussplots aus Gattern und Vergleichsplots  ps pasture structure 2.0 2.0 Vegetationsaufnahmen im Freiland oder Wiese 2m*2m  dm dendrometer band field 50.</description>
+    </item>
+    
+    <item>
+      <title>Plots</title>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-10-plots/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-10-plots/</guid>
+      <description>   Survey Plots  </description>
+    </item>
+    
+    <item>
+      <title>Views</title>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-10-views/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-10-views/</guid>
+      <description>   Views  </description>
+    </item>
+    
+    <item>
+      <title>Triggers</title>
+      <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-09-triggers/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-09-triggers/</guid>
+      <description>All custom made triggers in the MOFgeoDB Triggers run automatically before or after a specific command is executed on the database. They are absolutely necessary to keep the database running. There are many more triggers which are created automatically by spatialite to keep the geometries consistent. Please remember:
+ A TRIGGER that has not been properly tested is called a … ¡¡¡ D I S A S T E R !</description>
+    </item>
+    
     <item>
       <title>Literature, Manuals and other Sources</title>
       <link>https://goettlic.github.io/MOFgeoDB/post/2021-12-07-literature-manuals-and-other-sources/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-07-literature-manuals-and-other-sources/</guid>
-      <description>Just all our sources: 1. Simple Features for R. (n.d.). Retrieved December 7, 2021, from https://r-spatial.github.io/sf/articles/sf1.html  Dorji, Y., Annighöfer, P., Ammer, C., &amp;amp; Seidel, D. (2019). Response of Beech (Fagus sylvatica L.) Trees to Competition—New Insights from Using Fractal Analysis. Remote Sensing, 11(22), 2656. https://doi.org/10.3390/rs11222656  Ehbrecht, M., Schall, P., Juchheim, J., Ammer, C., &amp;amp; Seidel, D. (2016). Effective number of layers: A new measure for quantifying three-dimensional stand structure based on sampling with terrestrial LiDAR.</description>
+      <description>Just all our sources: 1. Simple Features for R. (n.d.). Retrieved December 7, 2021, from https://r-spatial.github.io/sf/articles/sf1.html  Dobrovolný, L., &amp;amp; Tesař, V. (2010). Growth and characteristics of old beech (Fagus sylvatica L.) Trees individually dispersed in spruce monocultures–. Journal of Forest Science, 56(No. 9), 406–416. https://doi.org/10.17221/19/2010-JFS  Dorji, Y., Annighöfer, P., Ammer, C., &amp;amp; Seidel, D. (2019). Response of Beech (Fagus sylvatica L.) Trees to Competition—New Insights from Using Fractal Analysis.</description>
     </item>
     
     <item>
@@ -23,8 +60,8 @@
       
       <guid>https://goettlic.github.io/MOFgeoDB/post/2021-12-04-description-mofgeodb/</guid>
       <description>General Setting The MOFgeoDB is a SQlite database using the spatial extension spatialite and serves our data of vegetation (mainly trees) and study plots for ecosystem research (forest structure, experiments) over time. Additional there are some auxiliary datasets (geopackage) of infrastructure for visual reasons. QGIS is used as back-end for analysis and visualization.
- Relational Structure First overview of the relational structure gives figure 1
- Figure 1: Complete ER diagram of MOFgeoDB without creator table  The database can be divided into following sections</description>
+ Relational Structure First overview of the relational structure gives figure 1.
+ Figure 1: Complete ER diagram of MOFgeoDB without lut_creator table  The database can be divided into following sections:</description>
     </item>
     
     <item>
