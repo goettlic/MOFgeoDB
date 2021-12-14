@@ -8,7 +8,7 @@ categories:
 tags:
   - database
 subtitle: ''
-description: ''
+description: 'All lookup tables of the MOFgeoDB'
 image: ''
 toc: yes
 output:
@@ -18,30 +18,21 @@ weight: 100
 ---
 # Lookup Tables
 #### lut_plottype
-<!-- und auch hier besser tabelle aus db direkt auslesen mit anzahl o.ä.-->
-plottype_id | name | xLength | yLength | description
-------------|------|---------|---------|-------------
-fs | forest structure | 20.0 | NULL | Waldstrukturplots nach Jürgen in den Masterkursen
-de | dendro ecology | 80.0 | NULL | Jahrringbaumfelder zur Aggregierung der Daten, eher virtuell
-exc | exclosure plot | 16.0 | 8.0 | Auschlussplots aus Gattern und Vergleichsplots
-ps | pasture structure | 2.0 | 2.0 | Vegetationsaufnahmen im Freiland oder Wiese 2m*2m
-dm | dendrometer band field | 50.0 | NULL | Dendrometerbandfelder zur Aggregierung der Einzelbäume, eher virtuell
-pg | polygon | NULL | NULL | unregelmäßiger Plot als Polygon
-sub | subplot | NULL | NULL | Subplot als regelmäßige Unterteilung eines größeren Plots 
+
+
+```{=html}
+<div id="htmlwidget-1083cb2ab29158c1389f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1083cb2ab29158c1389f">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6"],[1,2,3,4,5,6],["fs","de","exc","ps","dm","pg"],["forest  structure","dendro ecology","exclosure plot","pasture structure","dendrometer band field","polygon"],[20,80,16,2,50,null],[null,null,8,2,null,null],["Waldstrukturplots nach Jürgen in den Masterkursen","Jahrringbaumfelder zur Aggregierung der Daten, eher virtuell","Auschlussplots aus Gattern und Vergleichsplots","Vegetationsaufnahmen im Freiland oder Wiese 2m*2m","Dendrometerbandfelder zur Aggregierung der Einzelbäume, eher virtuell","unregelmäßiger Plot als Polygon"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>id<\/th>\n      <th>plottype_id<\/th>\n      <th>name<\/th>\n      <th>xlength<\/th>\n      <th>ylength<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+```
 
 #### lut_tree_state
-<!-- eigentlich besser direkt aus der db lesen und die Tabelle anzeigen lassen -->
-state_id | state | name | description
----------|-------|------|----------------
-1.1 | 1 |	alive |	first survey living tree
-1.2 |	1 |	alive |	living tree from young growth
-2.4 |	0 |	dead |	died unspecified
-2.1 |	0 |	dead |	first survey dead tree
-2.2 |	0 |	dead |	trunk fracture
-2.3 |	0 |	dead |	windthrow with uprooted tree
-3.1 |	0 |	felling |	felling only
-3.2 |	0 |	timber extraction |	felling and timber extraction
-3.3 |	1 |	limbing |	limbing
-3.4 |	1 |	bark ringing |	bark ringing
-2.5 |	0 |	dead |	first survey stump only
-0 |	1 |	db | first db entry
+
+
+```{=html}
+<div id="htmlwidget-0b2e4cf4b6331a1bc63a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0b2e4cf4b6331a1bc63a">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12"],[2,3,5,6,7,8,11,12,13,14,15,16],["1.1","1.2","2.4","2.1","2.2","2.3","3.1","3.2","3.3","3.4","2.5","0"],[1,1,0,0,0,0,0,0,1,1,0,1],["alive","alive","dead","dead","dead","dead","felling","timber extraction","limbing","bark ringing","dead","db"],["first survey living tree","living tree from young growth","died unspecified","first survey dead tree","trunk fracture","windthrow with uprooted tree","felling only","felling and timber extraction","limbing","bark ringing","first survey stump only","first db entry"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>id<\/th>\n      <th>state_id<\/th>\n      <th>state<\/th>\n      <th>name<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","paging":false,"columnDefs":[{"className":"dt-right","targets":[1,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+```
+
+
+
+
